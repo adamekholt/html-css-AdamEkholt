@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.top_container {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.top_container > div {
+    padding: 10px;
+    margin: auto;
+  }
+
+.top_container img {
+    width: 100px;
+}
+
+.nav_container {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+

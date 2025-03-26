@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product overview woman</title>
+    <title>Productpage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/cart.css">
+    <link rel="stylesheet" href="/src/css/productpage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
@@ -48,50 +48,32 @@
     
     
     <main>
-        <h1>Down jackets</h1>
-        <div class="hero-container">
-            <a href="/src/pages/product-men.html" class="product-link">
-                <div class="product-box">
-                    <img src="/assets/images/menjacket1.png" alt="Produkt 1">
-                    <p class="price">1799kr</p>
-                </div>
-            </a>
-            <a href="/src/pages/product-men.html" class="product-link">
-                <div class="product-box">
-                    <img src="/assets/images/menjacket1.png" alt="Produkt 2">
-                    <p class="price">1799kr</p>
-                </div>
-            </a>
-            <a href="/src/pages/product.men.html" class="product-link">
-                <div class="product-box">
-                    <img src="/assets/images/menjacket1.png" alt="Produkt 3">
-                    <p class="price">1799kr</p>
-                </div>
-            </a>
-            <a href="/src/pages/product-men.html" class="product-link">
-                <div class="product-box">
-                    <img src="/assets/images/menjacket1.png" alt="Produkt 4">
-                    <p class="price">1799kr</p>
-                </div>
-            </a>
-            <a href="/src/pages/product-men.html" class="product-link">
-                <div class="product-box">
-                    <img src="/assets/images/menjacket1.png" alt="Produkt 5">
-                    <p class="price">1799kr</p>
-                </div>
-            </a>
-            <a href="/src/pages/product-men.html" class="product-link">
-                <div class="product-box">
-                    <img src="/assets/images/menjacket1.png" alt="Produkt 6">
-                    <p class="price">1799kr</p>
-                </div>
-            </a>
-        </div>        
+        <div class="hero">
+            <div class="image-container">
+                <img class="main-image" src="/assets/images/menjacket1.png" alt="Storm Rain Jacket">
+                <img class="thumb-image" src="/assets/images/menjacket2.png" alt="Small Image">
+            </div>
+    
+            <div class="details">
+                <h1>Storm Rain Jacket</h1>
+                <p class="price">1799kr</p>
+                <p>Lightweight yet protective, the Storm rain jacket shields you from the elements with waterproof fabric and a breathable design.</p>
+                <p><strong>Color</strong></p>
+                <span class="color-dot"></span>
+                <p class="size"><strong>Available sizes</strong></p>
+                <p>M</p>
+                <button class="cart-btn">Add to cart</button>
+            </div>
+        </div>
     </main>
 
     <footer>
         <form class="newsletter">
             <p class="signup">Sign up to our newletter!</p>
+            <div class="name">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" required/>
+            </div>
             <div class="email">
             <label for="email">Email</label>
             <input type="email" id="email" required/>

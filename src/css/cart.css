@@ -1,0 +1,57 @@
+/*Styling basics*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --PRIMARY-COLOR: #103944;
+    --SECONDARY-COLOR-ONE: #456369;
+    --SECONDARY-COLOR-TWO: #A3AEB1;
+    --SECONDARY-COLOR-THREE: #D9D9D9;
+    --NEUTRAL-ONE: #FFFFFF;
+    --NEUTRAL-TWO: #1E1E1E;
+    font-family: "Inter";
+}
+
+/* Hero container */
+.hero-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsiv design for mobile */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr; /* 1 kolonne på mobile enheter */
+    }
+}
+
+/* Styling for produktbokser */
+.product-box {
+    background-color: var(--PRIMARY-COLOR);
+    padding: 20px;
+    padding-bottom: 40px; /* Øker bunnmargen for å gi plass til prisen */
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden; /* Sørger for at bilder ikke stikker ut */
+    position: relative; /* Nødvendig for absolutte posisjoner i boksen */
+}
+
+.product-box img {
+    width: 100%;  /* Bilde fyller hele bredden av boksen */
+    height: 300px;  /* Fast høyde for å sikre at alle bilder er like høye */
+    object-fit: cover;  /* Beskjærer bildet for å fylle boksen */
+    object-position: top;  /* Sørger for at den øvre delen av bildet vises */
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 1.1em;
+    color: var(--NEUTRAL-ONE);
+    position: absolute;  /* Plasserer prisen absolutt i forhold til produktboksen */
+    right: 1.5rem;  /* Plasserer prisen 10px fra høyre kant */
+    bottom: 1rem;  /* Plasserer prisen 20px fra bunnen av boksen */
+}

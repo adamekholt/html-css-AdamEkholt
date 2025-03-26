@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="/src/css/style.css"/>
+    <title>Womans menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <section class="nav-container-top">
+            <div class="logo">
+                <a href="/index.html"><img class="top_header_img" src="/assets/images/RainyDays_Logo.png" alt="RainyDays_Logo" /></a>
+            </div> 
+        </section>
         <section class="nav-container-bottom">
             <div class="left-nav">
                 <div class="dropdown">
@@ -39,33 +45,34 @@
             </div>
         </section>
     </header>
+    
+    
     <main>
-        <div class="grid.container">
-            <section class="hero">
-                <div>
-                    <img class="hero-image1" src="/assets/images/Frame 18.png" alt="forest-image"/>
-                    <img class="hero-image2" src="/assets/images/RainyDays_Logo.png" alt="RainyDays-Logo"/>
-                </div>
-                <div class="hero-buttons">
-                    <a href="/src/pages/mens-menu.html" class="men-menu-button">
-                        <button class="men-menu-button">Men</button>
-                    </a>
-                    <a href="/src/pages/womans-menu.html" class="woman-menu-button">
-                        <button class="woman-menu-button">Woman</button>
-                    </a>
-                </div>
-                <div class="hero-arrow">
-                    <span class="material-symbols-outlined">arrow_drop_down</span>
-                </div>
-            </section>
-            <section class="new-arrivals">
-                <h2 class="info-homepage">New Arrivals</h2>
-                <img class="new-arrivals-image1" src="/assets/images/Rectangle 105.png" alt="yellow fabric"/>
-                <img class="new-arrivals-image2" src="/assets/images/unsplash_mJPMbJj4AxA.png" alt="yellow jacket"/>
-            </section>
-            
-            </div>     
-        </div>
+        <h1>Womans wear</h1>
+        <section class="grid-container">
+            <div class="box">
+                <a href="/src/pages/product-overview-woman.html">
+                    <h3>Down jackets</h3>
+                </a>
+            </div>
+            <div class="box">
+                <a href="/src/pages/product-overview-woman.html">
+                    <h3>Rain jackets</h3>
+                </a>
+            </div>
+            <div class="box">
+                <a href="/src/pages/product-overview-woman.html">
+                    <h3>Softshell jackets</h3>
+                </a>
+            </div>
+            <div class="box">
+                <a href="/src/pages/product-overview-woman.html">
+                    <h3>Parkas</h3>
+                </a>
+            </div>
+        </section>
+        </main>   
+
         <footer>
             <form class="newsletter">
                 <p class="signup">Sign up to our newletter!</p>

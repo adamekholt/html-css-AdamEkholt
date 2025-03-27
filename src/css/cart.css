@@ -1,4 +1,4 @@
-/*Styling basics*/
+/* Styling basics */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,46 +12,117 @@
     font-family: "Inter";
 }
 
-/* Hero container */
-.hero-container {
+/* Grid-layout for alle checkout-sider */
+.two-column-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
 }
 
-/* Responsiv design for mobile */
-@media (max-width: 768px) {
-    .hero-container {
-        grid-template-columns: 1fr; /* 1 kolonne på mobile enheter */
-    }
-}
-
-/* Styling for produktbokser */
-.product-box {
-    background-color: var(--PRIMARY-COLOR);
-    padding: 20px;
-    padding-bottom: 40px; /* Øker bunnmargen for å gi plass til prisen */
+.two-column-grid-container {
+    padding: 2rem;
     border-radius: 8px;
-    text-align: center;
-    overflow: hidden; /* Sørger for at bilder ikke stikker ut */
-    position: relative; /* Nødvendig for absolutte posisjoner i boksen */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.product-box img {
-    width: 100%;  /* Bilde fyller hele bredden av boksen */
-    height: 300px;  /* Fast høyde for å sikre at alle bilder er like høye */
-    object-fit: cover;  /* Beskjærer bildet for å fylle boksen */
-    object-position: top;  /* Sørger for at den øvre delen av bildet vises */
-    border-radius: 8px;
+/* Ensartet stil for inputfelter */
+form input,
+form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-.price {
-    font-size: 1.1em;
+/* Knapper */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--SECONDARY-COLOR-ONE);
     color: var(--NEUTRAL-ONE);
-    position: absolute;  /* Plasserer prisen absolutt i forhold til produktboksen */
-    right: 1.5rem;  /* Plasserer prisen 10px fra høyre kant */
-    bottom: 1rem;  /* Plasserer prisen 20px fra bunnen av boksen */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--PRIMARY-COLOR);
+}
+
+/* Cart item styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.delivery-option {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.delivery-option input {
+    margin: 0; /* Fjerner standard margin */
+    width: 16px;
+    height: 16px;
+}
+
+/* Betalingsseksjon */
+.payment-section {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Form-elementer for betalingsinfo */
+.payment-section label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.payment-section span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.payment-section input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+strong {
+    color: var(--NEUTRAL-TWO);
+}
+
+nav .active {
+    color: var(--SECONDARY-COLOR-ONE);
+}
+
+@media (max-width: 768px) {
+    .checkout-grid {
+        grid-template-columns: 1fr;
+    }
 }

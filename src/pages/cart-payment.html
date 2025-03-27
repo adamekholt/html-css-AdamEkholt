@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productpage</title>
+    <title>cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/product-page.css">
+    <link rel="stylesheet" href="/src/css/cart.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
@@ -46,35 +46,48 @@
         </section>
     </header>
     
-    
-    <main>
-        <main>
-            <div class="two-column-grid">
-                <section class="two-column-container image-container">
-                    <img class="main-image" src="/assets/images/girljacket1.png" alt="Storm Rain Jacket">
-                    <img class="thumb-image" src="/assets/images/girljacket2.png" alt="Small Image">
-                </section>
-            
-                <div class="two-column-container details-container">
-                    <h1>Storm rain jacket</h1>
-                    <p>Lightweight yet protective, the Storm rain jacket shields you from the elements with waterproof fabric and a breathable design. Featuring a sleek fit and adjustable hood, it’s ideal for staying dry in wet conditions.</p>
-                    
-                    <div class="color-section">
-                        <p class="color-label">Color</p>
-                        <span class="colordot-red"></span>
-                    </div>
-                
-                    <div class="size-section">
-                        <p class="size-label">Available sizes</p>
-                        <p class="size">M</p>
-                    </div>
-                
-                    <p class="price">1799 kr</p>
-                    <button class="cart-button">Add to cart</button>
-                </div>
-                
+    <main class="two-column-grid">
+        <section class="payment-section">
+            <h2>Payment details</h2>
+            <form id="payment-form">
+                <label>
+                    <span>Cardholder Name</span>
+                    <input type="text" placeholder="John Doe" required>
+                </label>
+        
+                <label>
+                    <span>Card Number</span>
+                    <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                </label>
+        
+                <label>
+                    <span>Expiration Date</span>
+                    <input type="text" placeholder="MM/YY" maxlength="5" required>
+                </label>
+        
+                <label>
+                    <span>CVV</span>
+                    <input type="text" placeholder="123" maxlength="3" required>
+                </label>
+        
+                <a href="/src/pages/ordervalidation.html" class="button">Complete payment</a>
+            </form>
+        
+            <nav>
+                <strong>Shipping information</strong> | <strong>Delivery options</strong> | <span class="active">Payment</span>
+            </nav>
+        </section>        
+
+        <section class="cart-summary">
+            <h2>Your Cart</h2>
+            <div class="cart-item">
+                <img src="/assets/images/jacket.jpg" alt="Jacket">
+                <p>Rain Jacket - Blue</p>
+                <p>Price: 1799 kr</p>
             </div>
-        </main>
+            <hr>
+            <p>Total 1799 kr</p>
+        </section>
     </main>
 
     <footer>

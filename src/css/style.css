@@ -1,4 +1,3 @@
-/*Styling basics*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,24 +17,18 @@ body {
 
 p {
     font-size: 14pt;
+    padding: 2rem;
+    font-family: "Inter";
 }
 
 h1 {
-    font-size: 32pt;
+    font-size: 30pt;
     padding: 2rem;
+    color: var(--PRIMARY-COLOR);
 }
 
 h2 {
     font-size: 20pt;
-}
-
-button {
-    background-color: var(--SECONDARY-COLOR-ONE);
-    color: var(--NEUTRAL-ONE);
-    font-family: "Inter";
-    font-size: 14pt;
-    stroke: var(--NEUTRAL-TWO);
-    border-radius: 10%;
 }
 
 a {
@@ -47,7 +40,7 @@ a {
 /*--*/
 /* Styling header */
 .nav-container-top {
-    background-color: var(--NEUTRAL-ONE);
+    background-color: var(--SECONDARY-COLOR-TWO);
     height: 20%;
     display: flex;
     justify-content: center;
@@ -62,8 +55,12 @@ a {
     z-index: 10; 
 }
 
+input {
+    background-color: var(--SECONDARY-COLOR-THREE);
+}
+
 .nav-container-bottom {
-    background-color: var(--NEUTRAL-ONE);
+    background-color: var(--SECONDARY-COLOR-TWO);
     height: 20%;
     display: flex;
     justify-content: space-between; 
@@ -71,6 +68,8 @@ a {
     z-index: 5;
     top: 0;
     position: sticky;
+    border: solid var(--PRIMARY-COLOR);
+    border-width: 0px 0px 1px 0px;
 }
 
 .left-nav {
@@ -85,7 +84,7 @@ a {
 }
 
 .dropdown-menu-button {
-    background-color: var(--NEUTRAL-ONE);
+    background-color: var(--SECONDARY-COLOR-TWO);
     color: var(--NEUTRAL-TWO);
     padding: 1rem;
     font-size: 1rem;
@@ -100,9 +99,11 @@ a {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--NEUTRAL-ONE);
+    background-color: var(--SECONDARY-COLOR-TWO);
     min-width: 15rem;
     z-index: 1;
+    border: solid var(--PRIMARY-COLOR);
+    border-width: 0px 1px 1px 1px;
   }
   
   .dropdown-content a {
@@ -200,20 +201,23 @@ a {
 }
 
 .info-homepage {
-    margin: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
-.new-arrivals {
+.image-wrapper {
     display: flex;
-    justify-content: center; /* Sentrerer bildene horisontalt */
-    align-items: center; /* Sentrerer bildene vertikalt hvis nødvendig */
-    margin-top: 20px; /* Legger litt avstand mellom overskriften og bildene */
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+    width: 100vw; /* Sikrer at containeren dekker hele skjermen */
+    overflow: hidden; /* Hindrer eventuelle uønskede overskridelser */
 }
 
-.new-arrivals img {
-    width: 300px; /* Setter lik bredde for begge bildene */
-    height: 400px; /* Setter lik høyde for begge bildene */
-    object-fit: cover; /* Sørger for at bildene beskjæres pent og beholder proporsjoner */
+.image-wrapper img {
+    width: 50%; /* Hvert bilde dekker 50% av skjermen */
+    height: 50vh; /* Beholder proporsjonene */
+    object-fit: cover; /* Sikrer at bildet dekker området uten å forvrenge */
 }
 
 /*Footer styling*/
@@ -297,44 +301,3 @@ footer {
     cursor: default;
 }
 /*--*/
-
-/* Grid container menu */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
-    grid-gap: 2rem; /* Mellomrom mellom boksene */
-    padding: 2rem;
-}
-
-.box {
-    background-color: var(--SECONDARY-COLOR-ONE);
-    color: var(--NEUTRAL-one);
-    font-size: 1rem;
-    padding: 2rem;
-    stroke: var(--PRIMARY-COLOR);
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.box:hover {
-    background-color: var(--PRIMARY-COLOR);
-}
-
-.box a {
-    text-decoration: none;
-    color: var(--NEUTRAL-ONE);
-}
-
-.box h3 {
-    font-size: 1.5rem;
-    color: var(--NEUTRAL-ONE);
-    font-weight: 500;
-}
-
-/* Responsivitet for mindre skjermer */
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* 1 kolonne på små skjermer */
-    }
-}

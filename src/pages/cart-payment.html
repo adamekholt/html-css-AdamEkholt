@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Cart payment information</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="stylesheet" href="/src/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
@@ -22,24 +22,24 @@
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Men</button>
                     <div class="dropdown-content">
-                      <a href="/src/pages/product-overview-men.html">Down jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Rain jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Softshell jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Parkas</a>
+                      <a href="/src/pages/product-overview.html">Down jackets</a>
+                      <a href="/src/pages/product-overview.html">Rain jackets</a>
+                      <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                      <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Woman</button>
                     <div class="dropdown-content">
-                        <a href="/src/pages/product-overview-woman.html">Down jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Rain jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Softshell jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Parkas</a>
+                        <a href="/src/pages/product-overview.html">Down jackets</a>
+                        <a href="/src/pages/product-overview.html">Rain jackets</a>
+                        <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                        <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
             </div>
             <div class="right-nav">
-                <input type="search" class="search-input" placeholder="Search">
+                <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
                 <a href="/index.html" class="material-symbols-outlined">home</a>
                 <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
             </div>
@@ -47,59 +47,36 @@
     </header>
     
     <main class="two-column-grid">
-        <section class="payment-section">
+        <section class="grid-container">
             <h2>Payment details</h2>
             <form id="payment-form">
-                <label>
-                    <span>Cardholder Name</span>
-                    <input type="text" placeholder="John Doe" required>
-                </label>
-        
-                <label>
-                    <span>Card Number</span>
-                    <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
-                </label>
-        
-                <label>
-                    <span>Expiration Date</span>
-                    <input type="text" placeholder="MM/YY" maxlength="5" required>
-                </label>
-        
-                <label>
-                    <span>CVV</span>
-                    <input type="text" placeholder="123" maxlength="3" required>
-                </label>
+                <input type="text" placeholder="Cardholders name" required>
+                <input type="text" placeholder="Cardnumber" required>
+                <input type="text" placeholder="Expiration date" required>
+                <input type="text" placeholder="CVC" required>
         
                 <a href="/src/pages/ordervalidation.html" class="button">Complete payment</a>
             </form>
         
-            <nav>
-                <strong>Shipping information</strong> | <strong>Delivery options</strong> | <span class="active">Payment</span>
-            </nav>
         </section>        
 
-        <section class="cart-summary">
+        <section class="two-column-container cart-summary">
             <h2>Your Cart</h2>
             <div class="cart-item">
-                <img src="/assets/images/jacket.jpg" alt="Jacket">
-                <p>Rain Jacket - Blue</p>
-                <p>Price: 1799 kr</p>
+                <img src="/assets/images/girljacket1.png" alt="Jacket">
+                <p>Cool down jacket - Blue</p>
+                <p>Price: 1799kr</p>
             </div>
             <hr>
-            <p>Total 1799 kr</p>
+            <p>Total: 1799kr</p>
         </section>
     </main>
 
     <footer>
         <form class="newsletter">
-            <p class="signup">Sign up to our newletter!</p>
-            <div class="name">
-            <label for="fullname">Full name</label>
-            <input type="text" id="fullname" required/>
-            </div>
+            <p class="signup">Sign up to our newsletter!</p>
             <div class="email">
-            <label for="email">Email</label>
-            <input type="email" id="email" required/>
+                <input type="email" id="email" placeholder="youremail@gmail.com" required/>
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="agree" required>
@@ -121,7 +98,7 @@
                 <li><a href="/src/pages/comingsoon.html">Returns & Exchanges</a></li>
                 <li><a href="/src/pages/comingsoon.html">Contact</a></li>
                 <li><a href="/src/pages/comingsoon.html">Terms & conditions</a></li>
-                <li>FAQ</li>
+                <li><a href="/src/pages/comingsoon.html">FAQ</a></li>
             </ul>
         </section>
         <section class="socialmedia-icons">

@@ -1,25 +1,24 @@
-
 /* Grid container menu */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
-    grid-gap: 2rem; /* Mellomrom mellom boksene */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
     padding: 2rem;
 }
 
 .box {
     background-color: var(--SECONDARY-COLOR-ONE);
-    color: var(--NEUTRAL-one);
+    color: var(--NEUTRAL-ONE);
     font-size: 1rem;
     padding: 2rem;
-    stroke: var(--PRIMARY-COLOR);
+    border: solid var(--NEUTRAL-TWO);
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.box:hover {
-    background-color: var(--PRIMARY-COLOR);
 }
 
 .box a {

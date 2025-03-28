@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productpage</title>
+    <title>Mens menu</menu></title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/product-page.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
@@ -22,69 +22,60 @@
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Men</button>
                     <div class="dropdown-content">
-                      <a href="/src/pages/product-overview-men.html">Down jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Rain jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Softshell jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Parkas</a>
+                      <a href="/src/pages/product-overview.html">Down jackets</a>
+                      <a href="/src/pages/product-overview.html">Rain jackets</a>
+                      <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                      <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Woman</button>
                     <div class="dropdown-content">
-                        <a href="/src/pages/product-overview-woman.html">Down jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Rain jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Softshell jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Parkas</a>
+                        <a href="/src/pages/product-overview.html">Down jackets</a>
+                        <a href="/src/pages/product-overview.html">Rain jackets</a>
+                        <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                        <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
             </div>
             <div class="right-nav">
-                <input type="search" class="search-input" placeholder="Search">
+                <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
                 <a href="/index.html" class="material-symbols-outlined">home</a>
                 <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
             </div>
         </section>
     </header>
     
-    
     <main>
-        <div class="two-column-grid">
-            <section class="two-column-container image-container">
-                <img class="main-image" src="/assets/images/menjacket1.png" alt="Storm Rain Jacket">
-                <img class="thumb-image" src="/assets/images/menjacket2.png" alt="Small Image">
-            </section>
-        
-            <div class="two-column-container details-container">
-                <h1>Storm rain jacket</h1>
-                <p>Lightweight yet protective, the Storm rain jacket shields you from the elements with waterproof fabric and a breathable design. Featuring a sleek fit and adjustable hood, it’s ideal for staying dry in wet conditions.</p>
-                
-                <div class="color-section">
-                    <p class="color-label">Color</p>
-                    <span class="colordot-black"></span>
-                </div>
-            
-                <div class="size-section">
-                    <p class="size-label">Available sizes</p>
-                    <p class="size">M</p>
-                </div>
-            
-                <p class="price">1799 kr</p>
-                <button class="cart-button">Add to cart</button>
-            </div>
-            
+    <h1>Womans wear</h1>
+    <section class="grid-container">
+        <div class="box">
+            <a href="/src/pages/product-overview.html">
+                <h3>Down jackets</h3>
+            </a>
         </div>
-    </main>
-
+        <div class="box">
+            <a href="/src/pages/product-overview.html">
+                <h3>Rain jackets</h3>
+            </a>
+        </div>
+        <div class="box">
+            <a href="/src/pages/product-overview.html">
+                <h3>Softshell jackets</h3>
+            </a>
+        </div>
+        <div class="box">
+            <a href="/src/pages/product-overview.html">
+                <h3>Parkas</h3>
+            </a>
+        </div>
+    </section>
+    </main>     
     <footer>
         <form class="newsletter">
-            <p class="signup">Sign up to our newletter!</p>
-            <div class="name">
-            <label for="fullname">Full name</label>
-            <input type="text" id="fullname" required/>
-            </div>
+            <p class="signup">Sign up to our newsletter!</p>
             <div class="email">
-            <label for="email">Email</label>
-            <input type="email" id="email" required/>
+                <input type="email" id="email" placeholder="youremail@gmail.com" required/>
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="agree" required>
@@ -106,7 +97,7 @@
                 <li><a href="/src/pages/comingsoon.html">Returns & Exchanges</a></li>
                 <li><a href="/src/pages/comingsoon.html">Contact</a></li>
                 <li><a href="/src/pages/comingsoon.html">Terms & conditions</a></li>
-                <li>FAQ</li>
+                <li><a href="/src/pages/comingsoon.html">FAQ</a></li>
             </ul>
         </section>
         <section class="socialmedia-icons">

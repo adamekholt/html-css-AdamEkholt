@@ -12,23 +12,28 @@
 }
 
 body {
-    background-color: var(--NEUTRAL-ONE);
+    background-color: var(--PRIMARY-COLOR);
 }
 
 p {
-    font-size: 14pt;
+    font-size: 12pt;
     padding: 2rem;
     font-family: "Inter";
+    color: var(--NEUTRAL-ONE);
 }
 
 h1 {
-    font-size: 30pt;
+    font-size: 20pt;
     padding: 2rem;
-    color: var(--PRIMARY-COLOR);
+    color: var(--NEUTRAL-ONE);
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
 h2 {
     font-size: 20pt;
+    color: var(--NEUTRAL-TWO);
+    padding-bottom: 10px;
 }
 
 a {
@@ -36,8 +41,14 @@ a {
     color: var(--NEUTRAL-TWO);
 }
 
+label {
+    font-size: 12pt;
+    font-family: "Inter";
+    color: var(--NEUTRAL-ONE);
+}
 
 /*--*/
+
 /* Styling header */
 .nav-container-top {
     background-color: var(--SECONDARY-COLOR-TWO);
@@ -55,21 +66,16 @@ a {
     z-index: 10; 
 }
 
-input {
-    background-color: var(--SECONDARY-COLOR-THREE);
-}
-
 .nav-container-bottom {
     background-color: var(--SECONDARY-COLOR-TWO);
-    height: 20%;
+    height: auto;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     z-index: 5;
-    top: 0;
-    position: sticky;
-    border: solid var(--PRIMARY-COLOR);
-    border-width: 0px 0px 1px 0px;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 }
 
 .left-nav {
@@ -86,9 +92,12 @@ input {
 .dropdown-menu-button {
     background-color: var(--SECONDARY-COLOR-TWO);
     color: var(--NEUTRAL-TWO);
+    font-weight: 500;
     padding: 1rem;
     font-size: 1rem;
     border: none;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
   }
   
   .dropdown-menu {
@@ -102,8 +111,8 @@ input {
     background-color: var(--SECONDARY-COLOR-TWO);
     min-width: 15rem;
     z-index: 1;
-    border: solid var(--PRIMARY-COLOR);
-    border-width: 0px 1px 1px 1px;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
   }
   
   .dropdown-content a {
@@ -119,15 +128,14 @@ input {
   
   .dropdown:hover .dropbtn {font-weight: bold; color: var(--PRIMARY-COLOR);}
 
-.search-input,
 .material-symbols-outlined {
     margin: 1rem;
+    align-items: center;
+    color: var(--NEUTRAL-TWO);
 }
-
-
 /*--*/
 
-/* Mainpage container */
+/* Mainpage hero container */
 .hero {
     grid-area: hero;
     display: flex;
@@ -137,18 +145,6 @@ input {
     padding: 10px 20px;
     height: 46rem;
 }
-
-.hero-h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--NEUTRAL-ONE);
-    font-size: 32pt;
-    text-align: center;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);  /* Dette gir en mørk kontur rundt teksten */
-}
-
 
 .hero .hero-image1 {
     width: 100%;
@@ -182,22 +178,15 @@ input {
     color: var(--NEUTRAL-ONE);
     font-size: 1rem;
     padding: 1rem 2rem;
-    stroke: var(--PRIMARY-COLOR);
+    border: solid var(--NEUTRAL-TWO);
     border-radius: 10px;
     cursor: pointer;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
 .hero-buttons button:hover {
     background-color: var(--PRIMARY-COLOR);
-}
-
-.hero .material-symbols-outlined {
-    position: absolute;  
-    bottom: 1rem; 
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem; 
-    color: var(--NEUTRAL-ONE)
 }
 
 .info-homepage {
@@ -210,27 +199,43 @@ input {
     justify-content: center; 
     align-items: center; 
     margin-top: 20px;
-    width: 100vw; /* Sikrer at containeren dekker hele skjermen */
-    overflow: hidden; /* Hindrer eventuelle uønskede overskridelser */
+    width: 100vw; 
+    overflow: hidden; 
 }
 
 .image-wrapper img {
-    width: 50%; /* Hvert bilde dekker 50% av skjermen */
-    height: 50vh; /* Beholder proporsjonene */
-    object-fit: cover; /* Sikrer at bildet dekker området uten å forvrenge */
+    width: 50%; 
+    height: 50vh; 
+    object-fit: cover; 
 }
+
+/*--*/
 
 /*Footer styling*/
 footer {
-    background-color: var(--NEUTRAL-ONE);
+    background-color: var(--SECONDARY-COLOR-TWO);
     text-align: center;
     margin-top: 2rem;
     padding: 2rem; 
-    border-top: 1px solid var(--SECONDARY-COLOR-TWO);
+    border: solid var(--PRIMARY-COLOR);
+    border-width: 1px 0px 0px 0px;
 }
 
 .signup {
-    padding: 1rem;
+    padding: 0.850rem;
+    color: var(--NEUTRAL-TWO);
+    font-weight: 500;
+}
+
+input {
+    width: 50vh;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: solid 1px var(--NEUTRAL-TWO);
+}
+
+.agree {
+    color: var(--NEUTRAL-TWO); 
 }
 
 .form {
@@ -241,14 +246,13 @@ footer {
     align-items: flex-start;
 }
 
-.name,
 .email {
     display: inline-flex;
     margin-bottom: 1rem;
 }
 
 .newsletter button {
-    width: 40%; 
+    width: 50vh; 
     padding: 0.5rem;
     border: none;
     background-color: var(--SECONDARY-COLOR-ONE);
@@ -263,6 +267,19 @@ footer {
     background-color: var(--PRIMARY-COLOR);
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px; /* Reduserer mellomrom */
+}
+
+.checkbox-container input {
+    margin: 0;
+    padding: 0;
+    width: 16px; 
+    height: 16px;
+}
 
 .footer-links {
     display: inline-block;

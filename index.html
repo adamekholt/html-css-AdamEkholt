@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="/src/css/style.css"/>
+    <link rel="stylesheet" href="/src/css/styles.css"/>
+    <link rel="stylesheet" href="/src/css/_reset.css">
+    <link rel="stylesheet" href="/src/css/_variables.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -16,24 +18,24 @@
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Men</button>
                     <div class="dropdown-content">
-                      <a href="/src/pages/product-overview-men.html">Down jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Rain jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Softshell jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Parkas</a>
+                      <a href="/src/pages/product-overview.html">Down jackets</a>
+                      <a href="/src/pages/product-overview.html">Rain jackets</a>
+                      <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                      <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Woman</button>
                     <div class="dropdown-content">
-                        <a href="/src/pages/product-overview-woman.html">Down jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Rain jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Softshell jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Parkas</a>
+                        <a href="/src/pages/product-overview.html">Down jackets</a>
+                        <a href="/src/pages/product-overview.html">Rain jackets</a>
+                        <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                        <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
             </div>
             <div class="right-nav">
-                <input type="search" class="search-input" placeholder="Search">
+                <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
                 <a href="/index.html" class="material-symbols-outlined">home</a>
                 <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
             </div>
@@ -47,15 +49,12 @@
                     <img class="hero-image2" src="/assets/images/RainyDays_Logo.png" alt="RainyDays-Logo"/>
                 </div>
                 <div class="hero-buttons">
-                    <a href="/src/pages/mens-menu.html" class="men-menu-button">
+                    <a href="/src/pages/menu.html" class="menu-button">
                         <button class="men-menu-button">Men</button>
                     </a>
-                    <a href="/src/pages/womans-menu.html" class="woman-menu-button">
+                    <a href="/src/pages/menu.html" class="menu-button">
                         <button class="woman-menu-button">Woman</button>
                     </a>
-                </div>
-                <div class="hero-arrow">
-                    <span class="material-symbols-outlined">arrow_drop_down</span>
                 </div>
             </section>
             <h1>New Arrivals</h1>
@@ -73,18 +72,13 @@
         </div>
         <footer>
             <form class="newsletter">
-                <p class="signup">Sign up to our newletter!</p>
-                <div class="name">
-                <label for="fullname">Full name</label>
-                <input type="text" id="fullname" required/>
-                </div>
+                <p class="signup">Sign up to our newsletter!</p>
                 <div class="email">
-                <label for="email">Email</label>
-                <input type="email" id="email" required/>
+                <input type="email" id="email" placeholder="youremail@gmail.com" required/>
                 </div>
                 <div class="checkbox-container">
                     <input type="checkbox" id="agree" required>
-                    <label for="agree">I agree to receive exclusive offers and updates.</label>
+                    <label for="agree" class="agree">I agree to receive exclusive offers and updates.</label>
                 </div>
                 <button type="submit">Sign me up!</button>
             </form>
@@ -102,7 +96,7 @@
                     <li><a href="/src/pages/comingsoon.html">Returns & Exchanges</a></li>
                     <li><a href="/src/pages/comingsoon.html">Contact</a></li>
                     <li><a href="/src/pages/comingsoon.html">Terms & conditions</a></li>
-                    <li>FAQ</li>
+                    <li><a href="/src/pages/comingsoon.html">FAQ</a></li>
                 </ul>
             </section>
             <section class="socialmedia-icons">

@@ -1,3 +1,4 @@
+/* Base styling */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -19,6 +20,7 @@ p {
     font-size: 12pt;
     padding: 2rem;
     font-family: "Inter";
+    letter-spacing: 1px;
     color: var(--NEUTRAL-ONE);
 }
 
@@ -27,17 +29,20 @@ h1 {
     padding: 2rem;
     color: var(--NEUTRAL-ONE);
     text-transform: uppercase; 
-    letter-spacing: 1px; 
+    letter-spacing: 2px;  
 }
 
 h2 {
     font-size: 20pt;
+    font-family: "Inter";
     color: var(--NEUTRAL-TWO);
     padding-bottom: 10px;
+    letter-spacing: 2px; 
 }
 
 a {
     text-decoration: none;
+    font-family: "Inter";
     color: var(--NEUTRAL-TWO);
 }
 
@@ -46,7 +51,6 @@ label {
     font-family: "Inter";
     color: var(--NEUTRAL-TWO);
 }
-
 /*--*/
 
 /* Styling header */
@@ -210,6 +214,10 @@ label {
     object-fit: cover; 
 }
 
+.h1-homepage {
+    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4); 
+}
+
 /*--*/
 
 /*Footer styling*/
@@ -325,7 +333,7 @@ input {
 .grid-container .hero {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Juster til toppen av siden */
+    align-items: flex-start;
     height: 100vh;      
     text-align: center;
     position: relative;
@@ -337,12 +345,11 @@ input {
     margin-top: 30px;
     position: relative;
     z-index: 10;
-    font-size: 30pt;
-    color: var(--NEUTRAL-ONE);
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 10px;
     text-align: center;
+    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.40);  
 }
 
 .hero-h2 {
@@ -352,8 +359,8 @@ input {
     position: relative;
     z-index: 10;
     padding: 1rem;
+    text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.40);  
 }
-
 /*--*/
 
 /* Hamburgermeny */
@@ -361,21 +368,18 @@ input {
     display: none;
 }
 
-/* For hamburger-ikonet */
-/* For hamburger-ikonet */
 .hamburger-icon {
     cursor: pointer;
-    position: absolute; /* Fester hamburger-ikonet til toppen av skjermen */
+    position: absolute; 
     top: 15px;
     left: 10px;
     z-index: 100;
     color: var(--PRIMARY-COLOR);
     padding: 1rem;
-    display: none; /* Skjuler som standard */
+    display: none; 
     align-items: center;
 }
 
-/* For mobile menu */
 .mobile-menu {
     display: none;
     flex-direction: column;
@@ -388,16 +392,14 @@ input {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hamburger-ikonets span */
 .hamburger-icon span {
     font-size: 2rem;
 }
 
-/* Dropdown meny */
 .dropdown-content-nav {
     display: none;
     position: absolute;
-    top: 60px; /* Økt avstand for å plassere den lenger ned */
+    top: 60px; 
     left: 0;
     background-color: var(--SECONDARY-COLOR-TWO);
     min-width: 10rem;
@@ -408,10 +410,9 @@ input {
 }
 
 header.homepage .dropdown-content-nav {
-    background-color: var(--NEUTRAL-ONE); /* Endre til ønsket bakgrunnsfarge */
+    background-color: var(--NEUTRAL-ONE);
 }
 
-/* Dropdown lenker */
 .dropdown-content-nav a {
     color: var(--NEUTRAL-TWO);
     padding: 1rem;
@@ -419,22 +420,14 @@ header.homepage .dropdown-content-nav {
     display: block;
 }
 
-/* Endre bakgrunnsfarge når hover */
-.dropdown-content-nav a:hover {
-    background-color: var(--SECONDARY-COLOR-TWO);
-}
-
-/* Vis dropdown meny når hamburger-ikonet er aktivert */
 #menu-checkbox:checked ~ .mobile-menu .dropdown-content-nav {
     display: block;
 }
 
-/* Når dropdown-menyen er hover, vis innhold */
 .dropdown:hover .dropdown-content-nav {
     display: block;
 }
 
-/* Når du hovrer over hamburger-ikonet, vis dropdown-menyen */
 .hamburger-icon:hover + .dropdown-menu {
     display: block;
 }
@@ -444,7 +437,6 @@ header.homepage .dropdown-content-nav {
     color: var(--NEUTRAL-TWO);
 }
 
-/* Vis hamburger-ikon på mobil */
 @media screen and (max-width: 768px) {
     .nav-container-bottom {
         display: none;
@@ -453,6 +445,7 @@ header.homepage .dropdown-content-nav {
         display: block;
     }
     .cart-icon-mobile {
-        display: none; /* Skjul cart-ikon på mobil */
+        display: none; 
     }
 }
+/*--*/

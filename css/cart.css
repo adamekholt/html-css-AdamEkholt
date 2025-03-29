@@ -22,11 +22,6 @@ p {
     color: var(--NEUTRAL-TWO);
 }
 
-.grid-container {
-    padding: 2rem;
-    border-radius: 8px;
-}
-
 input {
     max-width: 100%;
     padding: 12px;
@@ -95,7 +90,8 @@ nav .active {
     font-weight: 600;
 }
 
-.cart-summary {
+.price-total {
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;

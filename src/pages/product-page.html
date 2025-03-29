@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming soon</title>
+    <title>Productpage men</title>
     <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/product-page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -60,13 +61,34 @@
     </header>
     
     <main>
-        <div class="grid-container">
-            <section class="hero">
-                <div>
-                    <img class="hero-image1" src="/assets/images/corey-agopian-eovZHPLjsb0-unsplash (1).jpg" alt="forest-image"/>
-                    <h1 class="hero-h1">Coming soon!</h1>
-                </div>
+        <div class="two-column-grid">
+            <section class="two-column-container image-container">
+                <img class="main-image" src="/assets/images/girljacket1.png" alt="Storm Rain Jacket">
+                <img class="thumb-image" src="/assets/images/girljacket2.png" alt="Small Image">
             </section>
+        
+            <div class="two-column-container details-container">
+                <h1>Storm rain jacket</h1>
+                <p>Lightweight yet protective, the Storm rain jacket shields you from the elements with waterproof fabric and a breathable design. Featuring a sleek fit and adjustable hood, it’s ideal for staying dry in wet conditions. Lo</p>
+
+                <label for="color-selection" class="color-section">Color:</label>
+                <select id="color-selection">
+                    <option value="Black">Black</option>
+                    <option value="Green">Green</option>
+                    <option value="Red">Red</option>
+                </select>
+            
+                <label for="size-selection" class="size-section">Size:</label>
+                <select id="size-selection">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            
+                <p class="price">1799 kr</p>
+                <a href="/src/pages/add-to-cart.html" class="cart-button">Add to cart</a>
+            </div>
+            
         </div>
     </main>
 

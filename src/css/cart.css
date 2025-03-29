@@ -1,61 +1,62 @@
-/* Styling basics */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    --PRIMARY-COLOR: #103944;
-    --SECONDARY-COLOR-ONE: #456369;
-    --SECONDARY-COLOR-TWO: #A3AEB1;
-    --SECONDARY-COLOR-THREE: #D9D9D9;
-    --NEUTRAL-ONE: #FFFFFF;
-    --NEUTRAL-TWO: #1E1E1E;
-    font-family: "Inter";
-}
-
-/* Grid-layout for alle checkout-sider */
 .two-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
-    max-width: 900px;
+    max-width: 80%;
     margin: auto;
+    margin-top: 20px;
+    background-color: var(--NEUTRAL-ONE);
+    border-radius: 10px;
 }
 
-.two-column-grid-container {
+label {
+    color: var(--NEUTRAL-TWO);
+    justify-content: flex-start;
+}
+
+p {
+    font-size: 12pt;
+    padding: 2rem;
+    font-family: "Inter";
+    color: var(--NEUTRAL-TWO);
+}
+
+.grid-container {
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensartet stil for inputfelter */
-form input,
-form select {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
+input {
+    max-width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     font-size: 16px;
 }
 
-/* Knapper */
+
 .button {
-    width: 100%;
-    padding: 12px;
     background-color: var(--SECONDARY-COLOR-ONE);
     color: var(--NEUTRAL-ONE);
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: solid var(--NEUTRAL-TWO);
+    border-radius: 10px;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
     cursor: pointer;
+    margin-top: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .button:hover {
     background-color: var(--PRIMARY-COLOR);
 }
 
-/* Cart item styling */
 .cart-item {
     display: flex;
     align-items: center;
@@ -76,41 +77,9 @@ form select {
 }
 
 .delivery-option input {
-    margin: 0; /* Fjerner standard margin */
+    margin: 0; 
     width: 16px;
     height: 16px;
-}
-
-/* Betalingsseksjon */
-.payment-section {
-    max-width: 400px;
-    margin: auto;
-}
-
-/* Form-elementer for betalingsinfo */
-.payment-section label {
-    display: block;
-    margin-bottom: 12px;
-}
-
-.payment-section span {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.payment-section input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-nav {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
 }
 
 strong {
@@ -119,6 +88,12 @@ strong {
 
 nav .active {
     color: var(--SECONDARY-COLOR-ONE);
+}
+
+.signup {
+    padding: 0.850rem;
+    color: var(--NEUTRAL-TWO);
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {

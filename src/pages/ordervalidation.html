@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordervalidation</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="/src/css/cart.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <section class="navbar-mobile">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon"><span class="material-symbols-outlined">menu</label>
+                    <div class="dropdown-content-nav">
+                        <a href="/index.html" class="material-symbols-outlined">home</a>
+                        <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
+                        <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
+                        <a href="/src/pages/menu.html">Men</a>
+                        <a href="/src/pages/menu.html">Woman</a>
+                     </div>
+                </label> 
+        </section>
+        
         <section class="nav-container-top">
             <div class="logo">
                 <a href="/index.html"><img class="top_header_img" src="/assets/images/RainyDays_Logo.png" alt="RainyDays_Logo" /></a>
@@ -22,24 +35,24 @@
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Men</button>
                     <div class="dropdown-content">
-                      <a href="/src/pages/product-overview-men.html">Down jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Rain jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Softshell jackets</a>
-                      <a href="/src/pages/product-overview-men.html">Parkas</a>
+                      <a href="/src/pages/product-overview.html">Down jackets</a>
+                      <a href="/src/pages/product-overview.html">Rain jackets</a>
+                      <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                      <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Woman</button>
                     <div class="dropdown-content">
-                        <a href="/src/pages/product-overview-woman.html">Down jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Rain jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Softshell jackets</a>
-                        <a href="/src/pages/product-overview-woman.html">Parkas</a>
+                        <a href="/src/pages/product-overview.html">Down jackets</a>
+                        <a href="/src/pages/product-overview.html">Rain jackets</a>
+                        <a href="/src/pages/product-overview.html">Softshell jackets</a>
+                        <a href="/src/pages/product-overview.html">Parkas</a>
                     </div>
                 </div>
             </div>
             <div class="right-nav">
-                <input type="search" class="search-input" placeholder="Search">
+                <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
                 <a href="/index.html" class="material-symbols-outlined">home</a>
                 <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
             </div>
@@ -48,11 +61,12 @@
     
     
     <main>
-        <div class="grid.container">
+        <div class="grid-container">
             <section class="hero">
-                <div>
-                    <img class="hero-image1" src="/assets/images/unsplash_mJPMbJj4AxA.png" alt="forest-image"/>
-                    <h1 class="hero-h1">Thank you for shopping! Ordernumber #123456</h1>
+                <div class="hero-text">
+                    <img class="hero-image1" src="/assets/images/corey-agopian-eovZHPLjsb0-unsplash (1).jpg" alt="forest-image"/>
+                    <h1 class="hero-h1">Thank you for shopping!</h1>
+                    <h2 class="hero-h2">Your ordernumber is #1234567</h2>
                 </div>
             </section>
         </div>
@@ -60,14 +74,9 @@
 
     <footer>
         <form class="newsletter">
-            <p class="signup">Sign up to our newletter!</p>
-            <div class="name">
-            <label for="fullname">Full name</label>
-            <input type="text" id="fullname" required/>
-            </div>
+            <p class="signup">Sign up to our newsletter!</p>
             <div class="email">
-            <label for="email">Email</label>
-            <input type="email" id="email" required/>
+                <input type="email" id="email" placeholder="youremail@gmail.com" required/>
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="agree" required>
@@ -89,7 +98,7 @@
                 <li><a href="/src/pages/comingsoon.html">Returns & Exchanges</a></li>
                 <li><a href="/src/pages/comingsoon.html">Contact</a></li>
                 <li><a href="/src/pages/comingsoon.html">Terms & conditions</a></li>
-                <li>FAQ</li>
+                <li><a href="/src/pages/comingsoon.html">FAQ</a></li>
             </ul>
         </section>
         <section class="socialmedia-icons">

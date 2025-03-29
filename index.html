@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="/src/css/styles.css"/>
-    <link rel="stylesheet" href="/src/css/_reset.css">
-    <link rel="stylesheet" href="/src/css/_variables.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="homepage">
+        <section class="navbar-mobile">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon"><span class="material-symbols-outlined">menu</label>
+                    <div class="dropdown-content-nav">
+                        <a href="/index.html" class="material-symbols-outlined">home</a>
+                        <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
+                        <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
+                        <a href="/src/pages/menu.html">Men</a>
+                        <a href="/src/pages/menu.html">Woman</a>
+                     </div>
+                </label> 
+        </section>
+
         <section class="nav-container-bottom">
             <div class="left-nav">
                 <div class="dropdown">
@@ -57,12 +69,13 @@
                     </a>
                 </div>
             </section>
-            <h1>New Arrivals</h1>
+            <a href="/src/pages/comingsoon.html"><h1>New Arrivals</h1></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, officia deserunt! Accusamus, expedita obcaecati est esse natus nesciunt porro consequatur dolorum hic corporis, sint laboriosam, illum soluta. Itaque, vero in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio blanditiis deserunt nesciunt maiores perspiciatis eius aspernatur deleniti ab fugiat, laborum perferendis unde porro suscipit error. Minima voluptatum magni quod incidunt.</p>
             <section class="image-wrapper">
                 <img class="new-arrivals-image1" src="/assets/images/joshua-earle-_fiqul_u3QA-unsplash.jpg" alt="yellow fabric"/>
                 <img class="new-arrivals-image2" src="/assets/images/corey-agopian-eovZHPLjsb0-unsplash (1).jpg" alt="yellow jacket"/>
             </section>
-            <h1>Lifetime warranty</h1>
+            <a href="/src/pages/comingsoon.html"><h1>Lifetime warranty</h1></a>
             <p>We stand by the quality of our jackets. That’s why we offer a Lifetime Warranty. If your jacket gets damaged due to normal wear and tear, send it in, and we’ll repair it for you. Whether it’s a broken zipper or torn fabric, we’ll do our best to fix it so you can keep wearing it for years to come.</p>
             <section class="image-wrapper">
                 <img class="new-arrivals-image1" src="/assets/images/Rectangle 105.png" alt="yellow fabric"/>

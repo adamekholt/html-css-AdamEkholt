@@ -1,4 +1,3 @@
-/* To-column grid for layout */
 .two-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,31 +7,28 @@
     margin: auto;
 }
 
-/* Container for innholdet, med sentrering */
 .two-column-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Sentrere innhold vertikalt */
-    align-items: center; /* Sentrere innhold horisontalt */
+    justify-content: center;
+    align-items: center; 
     padding: 1rem;
     border: solid var(--SECONDARY-COLOR-TWO);
     border-radius: 8px;
     background: var(--NEUTRAL-ONE);
-    width: 100%; /* Sørg for at containeren fyller tilgjengelig plass */
-    box-sizing: border-box; /* Forhindrer at padding påvirker bredden */
+    width: 100%; 
+    box-sizing: border-box;
 }
 
-/* Generell stil for tekst */
 p, label {
     color: var(--NEUTRAL-TWO);
-    text-align: center; /* Sørg for at all tekst er sentrert */
+    text-align: center; 
 }
 
 h1 {
     color: var(--NEUTRAL-TWO);
 }
 
-/* Container for bilder */
 .image-container {
     display: flex;
     flex-direction: column;
@@ -47,12 +43,11 @@ h1 {
     width: 100%;
     height: auto;
     min-height: 100%;
-    object-fit: cover; /* Bilde fyller hele containeren og skjærer av overflødig */
+    object-fit: cover;
     position: absolute;
     object-position: top;
 }
 
-/* Styler for thumbnail bilde ved hover */
 .thumb-image {
     opacity: 0;
 }
@@ -65,11 +60,10 @@ h1 {
     opacity: 1;
 }
 
-/* Container for detaljer som select, pris og knapp */
 .details.container {
     display: flex;
-    flex-direction: column; /* Vertikal retning for små skjermer */
-    align-items: center; /* Sentrer alt innhold horisontalt */
+    flex-direction: column; 
+    align-items: center; 
     gap: 10px;
     padding: 1rem;
     margin: 0 auto;
@@ -79,11 +73,11 @@ h1 {
 }
 
 select {
-    width: 20vh; /* Juster bredden etter behov */
+    width: 20vh; 
     padding: 0.5rem;
     border-radius: 5px;
     border: solid 1px var(--NEUTRAL-TWO);
-    height: 40px; /* Passende høyde */
+    height: 40px; 
     display: inline-block;
 }
 
@@ -92,11 +86,11 @@ select {
     font-size: 1.1em;
     display: inline-block;
     margin: 0;
-    text-align: center; /* Sentere prisen */
+    text-align: center; 
 }
 
-/* Knapper */
-.cart-button {
+.cart-button{
+    display: flex;
     background-color: var(--SECONDARY-COLOR-ONE);
     color: var(--NEUTRAL-ONE);
     font-size: 1rem;
@@ -107,37 +101,48 @@ select {
     text-transform: uppercase; 
     letter-spacing: 1px; 
     text-align: center;
+    margin: 10px;
 }
 
 .cart-button:hover {
     background-color: var(--PRIMARY-COLOR);
 }
 
-/* Responsiv design for mindre skjermer */
+.buttons-container {
+    padding: 10px;
+    bottom: 0;
+    top: 0;
+}
+
+.signup {
+    padding: 0.850rem;
+    color: var(--NEUTRAL-TWO);
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     .two-column-grid {
-        grid-template-columns: 1fr; /* Stabler elementene på små skjermer */
+        grid-template-columns: 1fr; 
     }
 
     .details.container {
-        flex-direction: column; /* Sentrer innhold vertikalt på små skjermer */
+        flex-direction: column; 
     }
 
     select {
-        width: 80%; /* Gjør select-boksen bredere på små skjermer */
+        width: 80%;
     }
 
-    /* Responsiv styling for bilder på små skjermer */
     .image-container img {
-        object-fit: cover; /* Sørg for at bildet fyller hele containeren på små skjermer */
-        width: 100%;  /* Full bredde */
-        height: 50vh; /* Juster høyden automatisk for å beholde proporsjonene */
-        min-height: 50%; /* Sørg for at bildet ikke blir for flatt */
+        object-fit: cover; 
+        width: 100%;
+        height: 50vh;
+        min-height: 50%;
     }
     .image-container {
-        object-fit: cover; /* Sørg for at bildet fyller hele containeren på små skjermer */
-        width: 100%;  /* Full bredde */
-        height: 50vh; /* Juster høyden automatisk for å beholde proporsjonene */
-        min-height: 50%; /* Sørg for at bildet ikke blir for flatt */
+        object-fit: cover;
+        width: 100%;
+        height: 50vh;
+        min-height: 50%;
     }
 }

@@ -12,6 +12,20 @@
 </head>
 <body>
     <header>
+        <section class="navbar-mobile">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon"><span class="material-symbols-outlined">menu</label>
+                    <div class="dropdown-content-nav">
+                        <a href="/index.html" class="material-symbols-outlined">home</a>
+                        <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
+                        <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
+                        <a href="/src/pages/menu.html">Men</a>
+                        <a href="/src/pages/menu.html">Woman</a>
+                     </div>
+                </label> 
+        </section>
+        
         <section class="nav-container-top">
             <div class="logo">
                 <a href="/index.html"><img class="top_header_img" src="/assets/images/RainyDays_Logo.png" alt="RainyDays Logo" /></a>
@@ -49,7 +63,7 @@
     <main class="two-column-grid">
         <section class="grid-container">
             <h2>Delivery Options</h2>
-            <form>
+            <form action="/src/pages/cart-payment.html">
                 <label class="delivery-option">
                     <input type="radio" name="delivery" checked>
                     <p>Standard delivery - 4-7 business days - Free</p>
@@ -65,12 +79,11 @@
                     <p>Next-Day delivery - 199 kr</p>
                 </label>
 
-                <a href="/src/pages/cart-payment.html" class="button">Continue</a>
+                <button type="submit" class="button">Continue</button>
 
             </form>
         </section>
 
-        <!-- Cart Summary -->
         <section class="two-column-container cart-summary">
             <h2>Your Cart</h2>
             <div class="cart-item">

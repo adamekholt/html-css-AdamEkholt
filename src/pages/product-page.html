@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productpage men</title>
-    <link rel="stylesheet" href="/src/css/_reset.css">
-    <link rel="stylesheet" href="/src/css/_variables.css">
     <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="stylesheet" href="/src/css/product-page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
@@ -14,6 +12,20 @@
 </head>
 <body>
     <header>
+        <section class="navbar-mobile">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon"><span class="material-symbols-outlined">menu</label>
+                    <div class="dropdown-content-nav">
+                        <a href="/index.html" class="material-symbols-outlined">home</a>
+                        <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
+                        <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
+                        <a href="/src/pages/menu.html">Men</a>
+                        <a href="/src/pages/menu.html">Woman</a>
+                     </div>
+                </label> 
+        </section>
+        
         <section class="nav-container-top">
             <div class="logo">
                 <a href="/index.html"><img class="top_header_img" src="/assets/images/RainyDays_Logo.png" alt="RainyDays_Logo" /></a>
@@ -57,7 +69,7 @@
         
             <div class="two-column-container details-container">
                 <h1>Storm rain jacket</h1>
-                <p>Lightweight yet protective, the Storm rain jacket shields you from the elements with waterproof fabric and a breathable design. Featuring a sleek fit and adjustable hood, it’s ideal for staying dry in wet conditions.</p>
+                <p>Lightweight yet protective, the Storm rain jacket shields you from the elements with waterproof fabric and a breathable design. Featuring a sleek fit and adjustable hood, it’s ideal for staying dry in wet conditions. Lo</p>
 
                 <label for="color-selection" class="color-section">Color:</label>
                 <select id="color-selection">

@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordervalidation</title>
     <link rel="stylesheet" href="/src/css/styles.css">
-    <link rel="stylesheet" href="/src/css/_reset.css">
-    <link rel="stylesheet" href="/src/css/_variables.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <section class="navbar-mobile">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon"><span class="material-symbols-outlined">menu</label>
+                    <div class="dropdown-content-nav">
+                        <a href="/index.html" class="material-symbols-outlined">home</a>
+                        <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
+                        <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
+                        <a href="/src/pages/menu.html">Men</a>
+                        <a href="/src/pages/menu.html">Woman</a>
+                     </div>
+                </label> 
+        </section>
+        
         <section class="nav-container-top">
             <div class="logo">
                 <a href="/index.html"><img class="top_header_img" src="/assets/images/RainyDays_Logo.png" alt="RainyDays_Logo" /></a>
@@ -49,11 +61,12 @@
     
     
     <main>
-        <div class="grid.container">
+        <div class="grid-container">
             <section class="hero">
-                <div>
-                    <img class="hero-image1" src="/assets/images/unsplash_mJPMbJj4AxA.png" alt="forest-image"/>
-                    <h1 class="hero-h1">Thank you for shopping! Ordernumber #123456</h1>
+                <div class="hero-text">
+                    <img class="hero-image1" src="/assets/images/corey-agopian-eovZHPLjsb0-unsplash (1).jpg" alt="forest-image"/>
+                    <h1 class="hero-h1">Thank you for shopping!</h1>
+                    <h2 class="hero-h2">Your ordernumber is #1234567</h2>
                 </div>
             </section>
         </div>

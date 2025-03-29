@@ -12,6 +12,20 @@
 </head>
 <body>
     <header>
+        <section class="navbar-mobile">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon"><span class="material-symbols-outlined">menu</label>
+                    <div class="dropdown-content-nav">
+                        <a href="/index.html" class="material-symbols-outlined">home</a>
+                        <a href="/src/pages/comingsoon.html" class="material-symbols-outlined">search</a>
+                        <a href="/src/pages/cart-info.html" class="material-symbols-outlined">shopping_bag</a>
+                        <a href="/src/pages/menu.html">Men</a>
+                        <a href="/src/pages/menu.html">Woman</a>
+                     </div>
+                </label> 
+        </section>
+        
         <section class="nav-container-top">
             <div class="logo">
                 <a href="/index.html"><img class="top_header_img" src="/assets/images/RainyDays_Logo.png" alt="RainyDays_Logo" /></a>
@@ -49,13 +63,13 @@
     <main class="two-column-grid">
         <section class="grid-container">
             <h2>Payment details</h2>
-            <form id="payment-form">
+            <form id="payment-form" action="/src/pages/ordervalidation.html">
                 <input type="text" placeholder="Cardholders name" required>
                 <input type="text" placeholder="Cardnumber" required>
                 <input type="text" placeholder="Expiration date" required>
                 <input type="text" placeholder="CVC" required>
         
-                <a href="/src/pages/ordervalidation.html" class="button">Complete payment</a>
+                <button type="submit" class="button">Complete payment</button>
             </form>
         
         </section>        

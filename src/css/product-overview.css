@@ -16,12 +16,18 @@
     position: relative;
     border: solid var(--PRIMARY-COLOR);
     border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Sørger for at innholdet fordeles jevnt */
+    height: 100%; /* Sørger for at alle boksene har samme høyde */
+    max-height: 60vh;
+    min-height: 60vh;
 }
 
 .product-box img {
     width: 100%;
-    height: auto;
-    max-height: 300px;
+    max-height: 50vh; /* Sett en maksimal høyde for bildene */
+    min-height: 50vh;
     object-fit: cover;
     object-position: top;
 }
@@ -29,10 +35,33 @@
 .price {
     font-size: 1.1em;
     color: var(--NEUTRAL-TWO);
-    position: absolute;
     right: 1rem;
     bottom: 1rem;
     padding: 5px; 
+    margin-left: 10px; /* Justerer mellomrom mellom name og price */
+}
+
+.product-name {
+    font-size: 1.1em;
+    color: var(--NEUTRAL-TWO);
+    right: 1rem;
+    bottom: 1rem;
+    padding: 5px; 
+    margin-right: 10px;
+}
+
+.signup {
+    padding: 0.850rem;
+    color: var(--NEUTRAL-TWO);
+    font-weight: 600;
+    z-index: 10;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between; /* Skyver name og price til hver sin side */
+    align-items: center;
+    gap: 20px; /* Mellomrom mellom navn og pris */
 }
 
 @media (max-width: 768px) {
@@ -41,6 +70,6 @@
     }
 
     .product-box img {
-        max-height: 200px; /* Sett en lavere max-høyde på bildet på små skjermer */
+        max-height: 200px;
     }
 }

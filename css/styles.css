@@ -115,7 +115,7 @@ input, form input {
     display: inline-block;
   }
   
-  .dropdown-content {
+  .menu-content {
     display: none;
     position: absolute;
     background-color: var(--SECONDARY-COLOR-TWO);
@@ -125,18 +125,18 @@ input, form input {
     letter-spacing: 1px; 
   }
   
-  .dropdown-content a {
+  .menu-content a {
     color: var(--NEUTRAL-TWO);
     padding: 1rem 1rem;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: var(--SECONDARY-COLOR-TWO);}
+  .menu-content a:hover {background-color: var(--SECONDARY-COLOR-TWO);}
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown-menu:hover .menu-content {display: block;}
   
-  .dropdown:hover .dropbtn {font-weight: bold; color: var(--PRIMARY-COLOR);}
+  .dropdown-menu:hover .dropdown-menu-button {font-weight: bold; color: var(--PRIMARY-COLOR);}
 
   .nav-container-bottom .material-symbols-outlined {
     margin: 1rem;

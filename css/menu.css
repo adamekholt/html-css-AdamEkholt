@@ -1,10 +1,12 @@
+/* Grid container */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    gap: 2rem;
     padding: 2rem;
 }
 
+/* Box styles */
 .box {
     background-color: var(--SECONDARY-COLOR-ONE);
     color: var(--NEUTRAL-ONE);
@@ -13,32 +15,24 @@
     border: solid var(--NEUTRAL-TWO);
     border-radius: 10px;
     cursor: pointer;
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
     text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 .box a {
     text-decoration: none;
-    color: var(--NEUTRAL-ONE);
+    color: inherit;
 }
 
 .box h3 {
     font-size: 1.5rem;
-    color: var(--NEUTRAL-ONE);
     font-weight: 500;
 }
 
-.signup {
-    padding: 0.850rem;
-    color: var(--NEUTRAL-TWO);
-    font-weight: 600;
-}
-
+/* Responsive design */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 }

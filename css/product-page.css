@@ -1,4 +1,4 @@
-/* Two Column Grid */
+/* Two column frid */
 .two-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,7 +51,7 @@ h1 {
     object-position: top;
 }
 
-.thumb-image {
+.image-hover {
     opacity: 0;
 }
 
@@ -59,7 +59,7 @@ h1 {
     opacity: 0;
 }
 
-.image-container:hover .thumb-image {
+.image-container:hover .image-hover {
     opacity: 1;
 }
 

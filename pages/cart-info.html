@@ -64,12 +64,12 @@
         <section class="grid-container">
             <h2>Shipping Information</h2>
             <form action="cart-shipping.html">
-                <input type="text" placeholder="First name" required>
-                <input type="text" placeholder="Last name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Addresse" required>
-                <input type="text" placeholder="Zip code" required>
-                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="First name" name="first-name" required>
+                <input type="text" placeholder="Last name" name="last-name" required>
+                <input type="email" placeholder="Email" name="email"required>
+                <input type="text" placeholder="Addresse" name="addresse" required>
+                <input type="text" placeholder="Zip code" name="zip-code" required>
+                <input type="text" placeholder="City" name="city" required>
                 <div class="form-group">
                     <label for="country">Country</label>
                     <select id="country">
@@ -99,7 +99,7 @@
         <form class="newsletter">
             <p class="signup">Sign up to our newsletter!</p>
             <div class="email">
-                <input type="email" id="email" placeholder="youremail@gmail.com" required/>
+                <input type="email" id="email" placeholder="youremail@gmail.com" name="email" required/>
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="agree" required>
@@ -126,9 +126,21 @@
         </nav>
         <section class="socialmedia-icons">
             <ul>
-                <li><a href="https://www.instagram.com/" ><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.twitter.com/" ><i class="fa-brands fa-square-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li>
+                    <a href="https://www.instagram.com/" aria-label="Instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" aria-label="Twitter">
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" aria-label="Facebook">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </li>
             </ul>
         </section>
     </footer>

@@ -2,22 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Add your favorite jackets to the cart." content="width=device-width, initial-scale=1.0">
     <title>Add to cart</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/product-page.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <section class="nav-container-top">
+        <nav class="navbar-mobile">
+            <div class="dropdown">
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+                <label for="menu-checkbox" class="hamburger-icon">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+                <div class="dropdown-content-nav">
+                    <a href="../index.html" class="material-symbols-outlined">home</a>
+                    <a href="comingsoon.html" class="material-symbols-outlined">search</a>
+                    <a href="cart-info.html" class="material-symbols-outlined">shopping_bag</a>
+                    <a href="mens-menu.html">Men</a>
+                    <a href="womens-menu.html">Women</a>
+                </div>
+            </div>
+        </nav>
+        
+        <nav class="nav-container-top">
             <div class="logo">
                 <a href="../index.html"><img class="top_header_img" src="../images/RainyDays_Logo.png" alt="RainyDays Logotype" /></a>
             </div> 
-        </section>
-        <section class="nav-container-bottom">
+        </nav>
+        <nav class="nav-container-bottom">
             <div class="left-nav">
                 <div class="dropdown">
                     <button class="dropdown-menu-button">Men</button>
@@ -29,7 +45,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropdown-menu-button">Woman</button>
+                    <button class="dropdown-menu-button">Women</button>
                     <div class="dropdown-content">
                         <a href="product-overview.html">Down jackets</a>
                         <a href="product-overview.html">Rain jackets</a>
@@ -43,50 +59,39 @@
                 <a href="../index.html" class="material-symbols-outlined">home</a>
                 <a href="cart-info.html" class="material-symbols-outlined">shopping_bag</a>
             </div>
-        </section>
+        </nav>
     </header>
     
     <main>
-        <div class="two-column-grid">
-            <section class="two-column-container image-container">
-                <img class="main-image" src="../images/girljacket1.png" alt="image of girl in blue jacket closeup">
-                <img class="thumb-image" src="../images/girljacket2.png" alt="image of girl in blue jacket">
-            </section>
-        
-            <div class="two-column-container details-container">
-                <h1>Storm rain jacket</h1>
-                <p>Lightweight yet protective, the Storm rain jacket shields you from the elements with waterproof fabric and a breathable design. Featuring a sleek fit and adjustable hood, it’s ideal for staying dry in wet conditions.</p>
-
-                <label for="color-selection" class="color-section">Color:</label>
-                <select id="color-selection">
-                    <option value="Black">Black</option>
-                    <option value="Green">Green</option>
-                    <option value="Red">Red</option>
-                </select>
-            
-                <label for="size-selection" class="size-section">Size:</label>
-                <select id="size-selection">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                </select>
-            
-                <p class="price">1799 kr</p>
-                <div class="buttons-container">
-                    <a href="../index.html" class="cart-button">Continue shopping</a>
-                    <a href="cart-info.html" class="cart-button">Go to checkout</a>
-                </div>
-            </div>
-            
-        </div>
-    </main>
+        <h1>Women's Wear</h1>
+        <section class="grid-container">
+            <article class="box">
+                <a href="product-overview.html">
+                    <h3>Down jackets</h3>
+                </a>
+            </article>
+            <article class="box">
+                <a href="product-overview.html">
+                    <h3>Rain jackets</h3>
+                </a>
+            </article>
+            <article class="box">
+                <a href="product-overview.html">
+                    <h3>Softshell jackets</h3>
+                </a>
+            </article>
+            <article class="box">
+                <a href="product-overview.html">
+                    <h3>Parkas</h3>
+                </a>
+            </article>
+        </section>
+    </main> 
 
     <footer>
         <form class="newsletter">
             <p class="signup">Sign up to our newsletter!</p>
-            <div class="email">
-                <input type="email" id="email" placeholder="youremail@gmail.com" required/>
-            </div>
+            <input type="email" id="email" placeholder="youremail@gmail.com" required/>
             <div class="checkbox-container">
                 <input type="checkbox" id="agree" required>
                 <label for="agree">I agree to receive exclusive offers and updates.</label>
@@ -94,26 +99,26 @@
             <button type="submit">Sign me up!</button>
         </form>
 
-        <section class="footer-links">
-            <ul class="list1">
+        <nav class="footer-links">
+            <ul>
                 <li><a href="comingsoon.html">Rainydays</a></li>
-                <li><a href="comingsoon.html">Enviromental attitude</a></li>
-                <li><a href="comingsoon.html">Waterproof & breathabilityguide</a></li>
+                <li><a href="comingsoon.html">Environmental attitude</a></li>
+                <li><a href="comingsoon.html">Waterproof & breathability guide</a></li>
                 <li><a href="comingsoon.html">Careers</a></li>
             </ul>
-        </section>
-        <section class="footer-links">
-            <ul class="list2">
+        </nav>
+        <nav class="footer-links">
+            <ul>
                 <li><a href="comingsoon.html">Returns & Exchanges</a></li>
                 <li><a href="comingsoon.html">Contact</a></li>
                 <li><a href="comingsoon.html">Terms & conditions</a></li>
                 <li><a href="comingsoon.html">FAQ</a></li>
             </ul>
-        </section>
+        </nav>
         <section class="socialmedia-icons">
             <ul>
-                <li><a href="https://www.instagram.com/" ><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="https://www.twitter.com/" ><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter"></i></a></li>
                 <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
             </ul>
         </section>

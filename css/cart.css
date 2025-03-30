@@ -1,3 +1,4 @@
+/*  Layout and Structure */
 .two-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,50 +11,19 @@
     border-radius: 10px;
 }
 
-label {
-    color: var(--NEUTRAL-TWO);
-    justify-content: flex-start;
-}
-
-p {
-    font-size: 12pt;
-    padding: 2rem;
-    font-family: "Inter";
-    color: var(--NEUTRAL-TWO);
-}
-
-input {
-    max-width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.button {
-    background-color: var(--SECONDARY-COLOR-ONE);
-    color: var(--NEUTRAL-ONE);
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    border: solid var(--NEUTRAL-TWO);
-    border-radius: 10px;
-    text-transform: uppercase; 
-    letter-spacing: 1px; 
-    cursor: pointer;
-    margin-top: 1.5rem;
+.price-total {
     display: flex;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.button:hover {
-    background-color: var(--PRIMARY-COLOR);
-}
 
+/* Cart Item */
 .cart-item {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -76,29 +46,67 @@ input {
     height: 16px;
 }
 
+/* Buttons */
+.button {
+    background-color: var(--SECONDARY-COLOR-ONE);
+    color: var(--NEUTRAL-ONE);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: solid var(--NEUTRAL-TWO);
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: var(--PRIMARY-COLOR);
+}
+
+/*Typography*/
+label {
+    justify-content: flex-start;
+}
+
+p {
+    color: var(--NEUTRAL-TWO);
+}
+
 strong {
     color: var(--NEUTRAL-TWO);
 }
 
+/* Navigation */
 nav .active {
     color: var(--SECONDARY-COLOR-ONE);
 }
 
-.signup {
-    padding: 0.850rem;
-    color: var(--NEUTRAL-TWO);
-    font-weight: 600;
+select {
+    width: 30%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--NEUTRAL-TWO);
+    border-radius: 10px;
+    font-size: 1rem;
 }
 
-.price-total {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
+/* Responsive design*/
 @media (max-width: 768px) {
-    .checkout-grid {
-        grid-template-columns: 1fr;
+    .two-column-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .cart-item {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .price-total {
+        align-items: flex-start;
     }
 }

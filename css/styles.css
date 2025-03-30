@@ -19,7 +19,6 @@ body {
 p {
     font-size: 12pt;
     padding: 2rem;
-    font-family: "Inter";
     letter-spacing: 1px;
     color: var(--NEUTRAL-ONE);
 }
@@ -34,7 +33,6 @@ h1 {
 
 h2 {
     font-size: 20pt;
-    font-family: "Inter";
     color: var(--NEUTRAL-TWO);
     padding-bottom: 10px;
     letter-spacing: 2px; 
@@ -42,14 +40,22 @@ h2 {
 
 a {
     text-decoration: none;
-    font-family: "Inter";
     color: var(--NEUTRAL-TWO);
 }
 
 label {
     font-size: 12pt;
-    font-family: "Inter";
     color: var(--NEUTRAL-TWO);
+}
+
+input, form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--NEUTRAL-TWO);
+    border-radius: 10px;
+    font-size: 1rem;
 }
 /*--*/
 
@@ -137,7 +143,6 @@ label {
     align-items: center;
     color: var(--NEUTRAL-TWO);
 }
-
 /*--*/
 
 /* Mainpage hero container */
@@ -148,7 +153,7 @@ label {
     align-items: center;
     position: relative;
     padding: 1rem 2rem;
-    height: 46rem;
+    height: 45rem;
 }
 
 .hero .hero-image1 {
@@ -194,11 +199,6 @@ label {
     background-color: var(--PRIMARY-COLOR);
 }
 
-.info-homepage {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
 .image-wrapper {
     display: flex;
     justify-content: center; 
@@ -217,7 +217,6 @@ label {
 .h1-homepage {
     text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4); 
 }
-
 /*--*/
 
 /*Footer styling*/
@@ -234,13 +233,6 @@ footer {
     padding: 0.850rem;
     color: var(--NEUTRAL-TWO);
     font-weight: 600;
-}
-
-input {
-    width: 50vh;
-    padding: 0.5rem;
-    border-radius: 10px;
-
 }
 
 .agree {
@@ -261,7 +253,7 @@ input {
 }
 
 .newsletter button {
-    width: 50vh; 
+    width: 40%; 
     padding: 0.5rem;
     border: none;
     background-color: var(--SECONDARY-COLOR-ONE);
@@ -326,7 +318,6 @@ input {
     gap: 1rem;
     cursor: default;
 }
-
 /*--*/
 
 /* Hero container in ordervalidation and comingsoon page*/
@@ -354,7 +345,6 @@ input {
 
 .hero-h2 {
     font-size: 20pt;
-    font-family: "Inter";
     color: var(--NEUTRAL-ONE);
     position: relative;
     z-index: 10;
@@ -363,7 +353,7 @@ input {
 }
 /*--*/
 
-/* Hamburgermeny */
+/*Hamburgermenu*/
 #menu-checkbox {
     display: none;
 }
@@ -402,7 +392,7 @@ input {
     top: 60px; 
     left: 0;
     background-color: var(--SECONDARY-COLOR-TWO);
-    min-width: 10rem;
+    min-width: 0rem;
     z-index: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -415,7 +405,9 @@ header.homepage .dropdown-content-nav {
 
 .dropdown-content-nav a {
     color: var(--NEUTRAL-TWO);
-    padding: 1rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-decoration: none;
     display: block;
 }
@@ -436,7 +428,9 @@ header.homepage .dropdown-content-nav {
     align-items: center;
     color: var(--NEUTRAL-TWO);
 }
+/*--*/
 
+/* Responsive design*/
 @media screen and (max-width: 768px) {
     .nav-container-bottom {
         display: none;
